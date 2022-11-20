@@ -1,0 +1,108 @@
+/* Use the whole screen; no less, no more */
+#page, main, .livedemo_wrap, img {
+  max-width: 100%;
+}
+#page, nav ul {
+  margin: auto;
+}
+#MathJax_Font_Test {
+  display: none;
+}
+
+/* It takes too much space and goes over the text */
+#ribbon {
+  display: none;
+}
+
+/* Scroll if it's larger than the screen */
+code, .MathJax_Display, .livedemo_wrap {
+  overflow-x: auto;
+  overflow-y: visible;
+}
+
+/* Navigation menu */
+nav {
+  top: 0;
+  right: 0;
+  width: auto;
+  padding: 1em;
+  z-index: 10;
+}
+
+/* Menu button */
+nav label {
+  display: block;
+}
+nav label:after {
+  display: block;
+  opacity: .5;
+  font-size: 2em;
+  width: 1em;
+  padding: .1em .25em;
+  margin-left: auto;
+  background: #51c1f1;
+  border-radius: .25em;
+  text-align: center;
+  color: #fff;
+  content: attr(data-open);
+}
+#nav_toggle:checked + nav label:after{
+  opacity: 1;
+  content: attr(data-close);
+  box-shadow: 5px 5px 5px #ccc;
+}
+
+/* Actual menu */
+nav ul {
+  background: white;
+  padding: .5em;
+  padding-left: 1em;
+  margin-top: .5em;
+  border: 1px solid gray;
+  box-shadow: 5px 5px 5px #ccc;
+  display: none;
+  border-radius: .5em;
+}
+#nav_toggle:checked + nav ul {
+  display: block;
+}
+nav li {
+  left: 0;
+  padding-right: .5em;
+}
+nav li.selected {
+  color: white;
+  background: black;
+  border-radius: 0 .5em .5em 0;
+}
+/* Black arrow to the left (http://codepen.io/chriscoyier/pen/lotjh) */
+nav li.selected:before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  background: transparent;
+  /* half the box height = half the line of text + (padding + margin) top & bottom */
+  border-top:    calc(.5em + 3px + 2px) solid transparent;
+  border-bottom: calc(.5em + 3px + 2px) solid transparent;
+  border-right: .8em solid black;
+}
+nav li.selected:after {
+  content: none;
+}
+
+nav blockquote {
+    display: none;
+}
+
+#adbox {
+    display: none;
+}
+
+#adbox-article {
+    display: block;
+    width: 100%;
+    height: 100px;
+}

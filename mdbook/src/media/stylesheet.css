@@ -1,0 +1,229 @@
+@import url(//fonts.googleapis.com/css?family=Gudea);
+@import url(//fonts.googleapis.com/css?family=Droid+Sans+Mono);
+
+html {
+	height: 101%
+}
+
+body {
+	font-family: Gudea, sans-serif;
+	font-size: 16px;
+	color: #111;
+}
+
+#page {
+	width: 1000px;
+	margin: auto;
+	margin-top: 15px;
+}
+
+#ribbon {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#nav_toggle {
+	display: none;
+}
+
+nav {
+	width: 200px;
+	position: fixed;
+}
+
+nav ul {
+	list-style-type: none;
+	margin-top: 28px;
+}
+
+nav li {
+	position: relative;
+	left: -40px;
+
+	padding: 3px;
+	margin-top: 2px;
+
+	cursor: default;
+}
+
+nav li.selected {
+  background: black;
+  color: white;
+  margin-right: .8em;
+}
+nav li.selected:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: transparent;
+  /* half the box height = half the line of text + (padding + margin) top & bottom */
+  border-top:    calc(.5em + 3px + 2px) solid transparent;
+  border-bottom: calc(.5em + 3px + 2px) solid transparent;
+  border-left: .6em solid black;
+}
+
+nav a {
+	color: #111;
+	text-decoration: none;
+}
+
+nav li a {
+	display: block;
+}
+
+nav blockquote {
+	margin-left: 0;
+
+	padding: 5px 5px 2px 5px;
+
+	background: #eee;
+	border-color: #ccc;
+
+	overflow: hidden;
+}
+
+main {
+	width: 800px;
+	float: right;
+}
+
+article {
+	margin-bottom: 20px;
+}
+
+article .important {
+	background: #FFAAAA;
+	border: 1px solid #BB4444;
+}
+
+article img {
+	display: block;
+	margin: auto;
+}
+
+article a {
+	color: black;
+	text-decoration: none;
+	border-bottom: 1px dotted black;
+}
+
+article a:hover {
+	border-bottom: 1px solid black;
+}
+
+#disqus_thread {
+	position: relative;
+	top: 15px;
+}
+
+h1 {
+	font-size: 28px;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+hr {
+	border: 0;
+	background-color: #999;
+	height: 1px;
+}
+
+blockquote {
+	background: rgb(226, 245, 167);
+	border: 1px solid rgb(189, 233, 56);
+	padding: 10px;
+}
+
+blockquote p {
+	margin: 0;
+}
+
+pre {
+	font-size: 14px;
+}
+
+article > p > code, a > code {
+	padding: 2px;
+
+	font-size: 14px;
+
+	border: 1px solid #ddd;
+	background: #f5f5f5;
+}
+
+a > code {
+    text-decoration: underline;
+}
+
+li > code {
+	padding: 2px;
+
+	font-size: 14px;
+
+	border: 1px solid #ddd;
+	background: #f5f5f5;
+}
+
+code[class=cpp] {
+	padding: 12px;
+
+	font-family: 'Consolas', 'Droid Sans Mono';
+
+	border-radius: 3px;
+	box-shadow: 0px 0px 5px black;
+}
+
+.livedemo {
+	width: 690px;
+	height: 546px;
+	margin: auto;
+
+	position: relative;
+}
+
+.livedemo canvas {
+	width: 640px;
+	height: 480px;
+
+	position: absolute;
+
+	left: 20px;
+	top: 36px;
+}
+
+#donate {
+	margin: 12px 12px 16px 12px;
+	height: 20px;
+
+	opacity: 0.7;
+}
+
+#donate_text {
+	float: left;
+
+	font-size: 12px;
+	line-height: 24px;
+}
+
+#donate_buttons {
+	float: right;
+}
+
+#adbox {
+    width: 160px;
+    height: 600px;
+}
+
+#adbox-article {
+    display: none;
+}

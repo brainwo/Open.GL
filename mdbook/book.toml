@@ -1,0 +1,12 @@
+[book]
+authors = ["Alexander Overvoorde"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Modern OpenGL Guide"
+
+[output.html.playground]
+editable = true
+
+[output.html]
+mathjax-support = true
