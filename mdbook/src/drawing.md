@@ -1,4 +1,4 @@
-# The graphics pipeline {#drawing}
+# The graphics pipeline
 
 By learning OpenGL, you've decided that you want to do all of the hard work yourself. That inevitably means that you'll be thrown in the deep, but once you understand the essentials, you'll see that doing things _the hard way_ doesn't have to be so difficult after all. To top that all, the exercises at the end of this chapter will show you the sheer amount of control you have over the rendering process by doing things the modern way!
 
