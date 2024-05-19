@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - mdbook
+  workflow_dispatch:
 
 permissions:
   contents: read
